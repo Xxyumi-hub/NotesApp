@@ -4,6 +4,7 @@ const cors = require('cors')
 
 //use middleware to make express show static content
 app.use(express.static('build'))
+//use middleware so we can allow requests from other origins
 app.use(cors())
 app.use(express.json())
 
